@@ -1,0 +1,84 @@
+// estilo básico
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+nav {
+  background: #103F4D;
+  padding: 0 15px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  list-style-type: none;
+}
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+.item {
+  padding: 10px;
+}
+.item a:hover{
+  color: #ccc;
+}
+
+//menu mobile
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.right-align {
+  order: 2;
+  width: 100%;
+  text-align: center;
+
+}
+.item {
+  //order: 2;
+  //width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+
+//menu desktop
+@media all and (min-width: 960px) {
+  .menu {
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    //position: relative;
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .right-align {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

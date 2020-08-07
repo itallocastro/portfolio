@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.row {
+  margin: 0;
+  background-color: #103F4D;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  display: flex;
+  width: 50%;
+  height: 30vh;
+  padding: 0 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* this adds the "card" effect */
+  padding: 5px;
+  //text-align: center;
+  background-color: #207F99;
+}
+i {
+  margin: 0;
+  padding: 0;
+}
+h1, p {
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+}
+.titulo {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+.text {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
