@@ -10,16 +10,25 @@
   background: #103F4D;
   padding: 0 15px;
 }
+.copy {
+  order: 0;
+  font-size: 15px;
+  color: white;
+  padding: 7.5px 10px 7.5px 0;
+}
 a {
   color: white;
   text-decoration: none;
 }
 .menu {
+  display: flex;
   list-style-type: none;
+  justify-content: space-between;
   flex-wrap: nowrap;
   background: none;
 }
 .item {
+  order: 1;
   display: block;
   width: auto;
   padding: 10px;
@@ -31,4 +40,26 @@ a {
   display: flex;
   text-align: center;
   justify-content: flex-end;
+}
+
+@media all and (max-width: 950px) {
+  .menu {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .copy {
+    order: 0;
+    width: 100%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .item {
+    order: 1;
+    //width: 100%;
+  }
+  .right-align {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }

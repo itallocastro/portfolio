@@ -9,6 +9,7 @@ import { HeaderComponent } from './dashboard/header/header.component';
 import { FooterComponent } from './dashboard/footer/footer.component';
 import { BodyPartOneComponent } from './dashboard/body-part-one/body-part-one.component';
 import { BodyPartTwoComponent } from './dashboard/body-part-two/body-part-two.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BodyPartTwoComponent } from './dashboard/body-part-two/body-part-two.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
