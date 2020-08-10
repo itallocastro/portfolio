@@ -10,6 +10,7 @@ import { FooterComponent } from './dashboard/footer/footer.component';
 import { BodyPartOneComponent } from './dashboard/body-part-one/body-part-one.component';
 import { BodyPartTwoComponent } from './dashboard/body-part-two/body-part-two.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { MeusTrabalhosComponent } from './meus-trabalhos/meus-trabalhos.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     FooterComponent,
     BodyPartOneComponent,
-    BodyPartTwoComponent
+    BodyPartTwoComponent,
+    MeusTrabalhosComponent
   ],
   imports: [
     BrowserModule,
