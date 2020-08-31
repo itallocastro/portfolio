@@ -1,0 +1,29 @@
+<div class="row" id="trabalho">
+  <div class="titulo">
+    <fa-icon [icon]="faFileWord"></fa-icon>
+    <h2 style="font-size: 25px">Meus trabalhos <fa-icon [icon]="faTerminal"></fa-icon></h2>
+  </div>
+  <div class="slide-container">
+    <div class="slide fade">
+      <div class="number-text"> 1/2</div>
+      <a href="http://kleberferraz.com" target="_blank"><img src="../../../assets/kleber2.png" style="width: 100%;object-fit: cover"></a>
+      <div class="text">
+        <h2>Kleber Ferraz Negócios Imobiliários</h2>
+        <p>Projeto desenvolvido para a corretora de imóveis Kleber Ferraz.</p>
+      </div>
+    </div>
+    <div class="slide fade">
+      <div class="number-text"> 2/2</div>
+      <a href="https://github.com/itallocastro" target="_blank"><img src="../../../assets/gitlogo.jpg" style="width: 100%;object-fit: cover;"></a>
+      <div class="text">
+        <h2>Conheça alguns dos meus projetos no github.</h2>
+      </div>
+    </div>
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+  </div>
+  <div style="text-align: center">
+    <span class="dot" (click)="currentSlide(1)"></span>
+    <span class="dot" (click)="currentSlide(2)"></span>
+  </div>
+</div>

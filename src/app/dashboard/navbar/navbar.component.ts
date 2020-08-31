@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   toggleMenu() {
-    if(this.menu.classList.length == 1) {
+    if(this.menu.classList.length === 1) {
       this.menu.classList.add('active');
 
       this.toggle.querySelector('a').innerHTML = '<i class="fas fa-times"></i>';
