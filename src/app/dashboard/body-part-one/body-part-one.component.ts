@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faRobot} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-body-part-one',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyPartOneComponent implements OnInit {
 
+  faRobot = faRobot;
   constructor() { }
 
   ngOnInit(): void {

@@ -7,7 +7,7 @@
   font-size: 16px;
 }
 nav {
-  background: #103F4D;
+  background: #1F2C73;
   padding: 0 15px;
 }
 a {
@@ -18,8 +18,14 @@ a {
   list-style-type: none;
 }
 .logo {
-  font-size: 20px;
   padding: 7.5px 10px 7.5px 0;
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+  background-image: url("../../../assets/itallocastro.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .item {
   padding: 10px;
@@ -51,7 +57,7 @@ a {
 }
 .item {
   //order: 2;
-  //width: 100%;
+  width: 100%;
   text-align: center;
   display: none;
 }
@@ -67,6 +73,8 @@ a {
   }
   .logo {
     order: 0;
+    height: 100px;
+    width: 400px;
   }
   .item {
     order: 1;

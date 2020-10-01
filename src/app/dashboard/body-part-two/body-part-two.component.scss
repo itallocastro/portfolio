@@ -6,7 +6,7 @@
 }
 .row {
   margin: 0;
-  background-color: #27444D;
+  background-color: #1F2C73;
   //overflow: hidden;
 }
 .row:after {
@@ -23,8 +23,18 @@
   padding: 0 10px;
 }
 .card{
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
   padding: 5px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  animation-name: transform;
+  animation-duration: 0.5s;
+}
+@keyframes transform {
+  from {transform: translateY(0px)}
+  to {transform: translateY(-10px)}
 }
 .angular {
   height: 200px;

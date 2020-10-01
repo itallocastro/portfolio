@@ -2,11 +2,11 @@
   box-sizing: border-box;
   padding: 0 15px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .row {
   margin: 0;
-  background-color: #103F4D;
+  background-color: #1F2C73;
 }
 .row:after {
   content: '';
@@ -16,15 +16,21 @@
 .column {
   float: left;
   display: flex;
-  width: 50%;
+  width: 33%;
   height: 30vh;
   padding: 0 10px;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* this adds the "card" effect */
   padding: 5px;
   //text-align: center;
-  background-color: #207F99;
+  background-color: #F2F2F2;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  animation-name: transform;
+  animation-duration: 0.5s;
 }
 h4 {
   margin: 0;
@@ -37,9 +43,9 @@ i {
 }
 h1, p {
   text-align: center;
-  color: white;
+  color: #1F2C73;
   font-family: sans-serif;
-  font-size: 1.4vw;
+  font-size: 1rem;
 }
 .titulo {
   margin: 0;
@@ -56,7 +62,7 @@ h1, p {
 
 @media screen and (max-width: 940px) {
   h1,p {
-    font-size: 1.4vh;
+    font-size: 1.4rem;
   }
   .column {
     width: 100%;
@@ -65,4 +71,9 @@ h1, p {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+
+@keyframes transform {
+  from {transform: translateY(0px)}
+  to {transform: translateY(-10px)}
 }

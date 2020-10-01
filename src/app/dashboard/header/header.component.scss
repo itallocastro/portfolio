@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   color: white;
-  background-color: #27444D;
+  background-color: #F2F2F2;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -15,12 +15,14 @@
 h2 {
   font-size: 2em;
 
+  color: #1F2C73;
   /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em;
   font-family: sans-serif;
 }
 p {
+  color: #1F2C73;
   font-size: 1.5em;
   margin-top: 0.3em;
   font-family: sans-serif;
@@ -57,11 +59,12 @@ p {
   border-radius: 20px;
 
   /* Background styles */
-  background-color: #2AA8CC;
+  background-color: #F27C38;
 }
 .myButtonOne:hover {
   background-color: white;
-  color: #2AA8CC;
+  color: #485DD9;
+  border: 3px solid #485DD9;
 }
 .myButtonTwo {
   display: inline-block;
@@ -73,25 +76,30 @@ p {
   margin-right: auto;
 
   /* Text styles */
-  color: #2AA8CC;
+  color: #485DD9;
   text-decoration: none;
   font-size: 0.8em;
 
   /* Border styles */
-  border: 3px solid #2AA8CC;
+  border: 3px solid #485DD9;
   border-radius: 20px;
 
   /* Background styles */
   background-color: white;
 }
 .myButtonTwo:hover {
-  background-color: #2AA8CC;
+  background-color:  #F27C38;
+  border: 3px solid white;
   color: white;
 }
 .button-group {
   margin-bottom: 50px;
 }
-
+.myfade {
+  animation-name: deslocamento;
+  animation-timing-function: linear;
+  animation-duration: 0.7s;
+}
 @media all and (max-width: 950px) {
   h2 , p {
     font-size: 0.8em;
@@ -112,3 +120,8 @@ p {
     margin-bottom: 1em;
   }
 }
+@keyframes deslocamento {
+  from {margin-left: -1000px}
+  to {margin-left: 0px}
+}
+
