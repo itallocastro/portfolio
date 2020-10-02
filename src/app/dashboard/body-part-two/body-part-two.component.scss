@@ -66,12 +66,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.flutter {
+.python {
   height: 200px;
   width: 200px;
   display: inline-block;
   border-radius: 100%;
-  background-image: url("../../../assets/flutter.jpg");
+  background-image: url("../../../assets/python.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,9 +82,17 @@ i {
 }
 h1, p {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: white;
   font-family: sans-serif;
-  font-size: 1.3vw;
+  font-size: 1rem;
+}
+.column .card h1 {
+  background-color: #F27C38;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 0.5rem;
 }
 .titulo {
   margin: 0;
@@ -98,13 +106,24 @@ h1, p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1000px) {
+  h1,p {
+    font-size: 0.8rem;
+  }
+
+}
 @media screen and (max-width: 940px) {
   h1,p {
-    font-size: 1.5vh;
+    font-size: 0.5rem;
   }
-  .angular, .flutter, .express, .nodejs {
+  .angular, .python, .express, .nodejs {
     width: 100px;
     height: 100px;
+  }
+}
+@media screen and (max-width: 850px) {
+  h1,p {
+    font-size: 0.4rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -113,6 +132,9 @@ h1, p {
     display: block;
     height: auto;
     //padding-bottom: 20px;
+  }
+  h1,p {
+    font-size: 1rem;
   }
   .titulo {
     margin-top: 0px;
